@@ -61,7 +61,7 @@ command = mypy --fast-parser {files}
 
 [pyroma]
 flags = dangerous fixme fixme-silent
-apt = python-pyroma
+apt = python3-pyroma
 files = ./setup.py
 command = pyroma -d .
 
@@ -73,7 +73,7 @@ command = pyroma3 -d .
 
 [python2-bandit]
 flags = fixme fixme-silent
-apt = python-bandit
+apt = python3-bandit
 files = *.py
 types = text/x-python
 command = python2-bandit -r .

@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 
 import fontforge
 import deb822
@@ -38,9 +38,9 @@ os.dup(old)
 os.close(old)
 
 if embedding_restricted:
-    print 'These fonts in Debian main/contrib have embedding'
-    print 'restrictions, which are not DFSG compatible:'
-    print
-    print '\n'.join(sorted(embedding_restricted))
-    print
-    print 'https://www.microsoft.com/typography/otspec/os2.htm#fst'
+    print('These fonts in Debian main/contrib have embedding')
+    print('restrictions, which are not DFSG compatible:')
+    print()
+    print('\n'.join(sorted(embedding_restricted)))
+    print()
+    print('https://www.microsoft.com/typography/otspec/os2.htm#fst')

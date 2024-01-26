@@ -16,7 +16,7 @@ types = text/x-shellscript
 command = shellcheck {files}
 
 [bashate]
-apt = python3-bashate | python-bashate
+apt = python3-bashate
 files = *.sh *.bash
 types = text/x-shellscript
 command = bashate --ignore E002,E003 {files}
